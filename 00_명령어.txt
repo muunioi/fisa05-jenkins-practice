@@ -3,4 +3,4 @@ docker run --env-file .env -p 80:8000 --name fastapi-server --rm -d muunii/fasta
 docker push muunii/fastapi-server:1.0
 
 github webhook 변경 ("EC2 퍼블릭 IP:8080/github-webhook/)
--> 첫번째 push (실패, github 링크 잘못연결) -> 두번째 push -> 새로운 파이프라인 연결(github-ec2) push
+-> 첫번째 push (실패, github 링크 잘못연결) -> 두번째 push -> 새로운 파이프라인 연결(github-ec2) push (실패, 연결안됨) -> 수동빌드 이후 다시 push
